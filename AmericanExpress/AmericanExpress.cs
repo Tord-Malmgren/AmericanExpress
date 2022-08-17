@@ -33,7 +33,6 @@ namespace AmericanExpress
         private static Int32 featuresLength;
         private static List<Double>[] transformers;
 
-
         static void Main()
         {
             DataSet trainDataSet = new();
@@ -42,7 +41,7 @@ namespace AmericanExpress
             DataRows testDataRows = new();
             testDataRows.Read();
 
-            //WriteFeature(138, trainDataSet, testDataRows);
+            WriteFeature(138, trainDataSet, testDataRows);
 
             //for (Double topRate = .1d; topRate < .9d; topRate += .1d)
             //{
@@ -569,7 +568,7 @@ namespace AmericanExpress
                         dataRow.Update(dataStrings);
                         previousCustomerId = customerId;
 
-                        n++;
+7                        n++;
 
                         if (!stopwatch.Elapsed.Seconds.Equals(seconds))
                         {
